@@ -1,15 +1,14 @@
 #!/usr/bin/python3
 """
-contains the MyList class
+Module - 1
+- class: MyList
+- Public instance: print_sorted
 """
 
 
 class MyList(list):
-    """a subclass of list"""
-    def __init__(self):
-        """initializes the object"""
-        super().__init__()
+    """A class inheritance of List"""
 
     def print_sorted(self):
-        """prints the sorted list"""
+        """Prints list in sorted order"""
         print(sorted(self))
