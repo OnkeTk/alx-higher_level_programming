@@ -1,12 +1,10 @@
 #!/usr/bin/python3
 """
-Module - 2
-- Implement an append function
+function that appends a string
 """
 
 
 def append_write(filename="", text=""):
-    """Appends to a file"""
-    with open(filename, "a", encoding="utf-8") as f:
-        f.append(text)
-        return len(text)
+    """returns the number of characters added:"""
+    with open(filename, 'a', encoding='utf=8') as f:
+        return f.write(text)
